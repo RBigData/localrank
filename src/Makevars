@@ -1,0 +1,5 @@
+SPMD_CPPFLAGS = -I/usr/lib/x86_64-linux-gnu/openmpi/include  -DMPI2 -DOPENMPI
+SPMD_LDFLAGS = -L/usr/lib/x86_64-linux-gnu/openmpi/lib -lmpi  -lutil -lpthread
+
+PKG_CFLAGS = $(SPMD_CPPFLAGS)
+PKG_LIBS = $(SPMD_LDFLAGS)
